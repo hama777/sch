@@ -26,11 +26,11 @@ exit;
 
 sub display_main_menu {
 
-$setup_cus = "<a href=\"sch_cus.pl\">カスタマイズ</a>\n" ; 
-$setup_item = "<a href=\"sch_item.pl\">定型項目編集</a>\n" ; 
-$setup_list = "<a href=\"sch_list.pl\">データ一覧</a>\n" ; 
-$setup_holi = "<a href=\"sch_holi.pl\">休日設定</a>\n" ; 
-$setup_down = "<a href=\"sch_down.pl\">データのダウンロード</a>\n" ; 
+$setup_cus = "<a href=\"sch_cus.cgi\">カスタマイズ</a>\n" ; 
+$setup_item = "<a href=\"sch_item.cgi\">定型項目編集</a>\n" ; 
+$setup_list = "<a href=\"sch_list.cgi\">データ一覧</a>\n" ; 
+$setup_holi = "<a href=\"sch_holi.cgi\">休日設定</a>\n" ; 
+$setup_down = "<a href=\"sch_down.cgi\">データのダウンロード</a>\n" ; 
 
 print << "EOF";
 Content-type: text/html;
@@ -94,7 +94,7 @@ border-bottom-color : yellow;
             <br>
             $setup_down<br>
             <br>
-            <form method="POST" enctype="multipart/form-data" action="sch_upload.pl">
+            <form method="POST" enctype="multipart/form-data" action="sch_upload.cgi">
             データのアップロード<br>
             ファイル：<input type="file" name="filen"><br>
             <input type="submit" value="アップロード" name="upname">
