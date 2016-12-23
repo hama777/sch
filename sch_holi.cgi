@@ -41,7 +41,7 @@ local($xx,$i,$type) ;
     printf("Content-type: text/html\n\n" ) ; 
     printf("<html><body>\n") ; 
     printf("<b>休日データ編集</b><br>\n");
-    printf("<form method=\"POST\" action=\"./sch_holi.pl\">\n") ; 
+    printf("<form method=\"POST\" action=\"./sch_holi.cgi\">\n") ; 
     printf("<table border=0 bgcolor=#91ffbf cellspacing=0 cellpadding=0><tr><td>\n") ; 
     printf("<table cellspacing=1 border=0 cellpadding=0><tr><td>削除</td><td>日付</td><td>私休日</td><td>名前</td></tr>\n") ; 
 
@@ -69,7 +69,7 @@ printf("年月日(yy/mm/dd) <input size=15 type=text name=\"adddate\" style=\"ba
 printf("名前 <input size=20 type=text name=\"additem\" style=\"background-color : #ffffbb;\">\n") ; 
 printf("私休日 <input type=\"checkbox\" name=\"pri\" value=\"1\">\n") ;
 printf("<input type=\"submit\" name=\"add\" value=\"追加\"><br>\n") ; 
-printf("</form><a href=./sch_setup.pl>戻る<a/></body></html>\n") ;
+printf("</form><a href=./sch_setup.cgi>戻る<a/></body></html>\n") ;
 
 
 }
