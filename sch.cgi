@@ -72,7 +72,7 @@ $cellpadding = 2   ;        # セル内余白
 $border =      0        ;   # 線のボーダー
 $out_line_width = 1    ;    # 外枠 線の幅
 $bgcolor =    "#ffffff" ;   # カレンダー外、背景色
-$bgimage =    "http://homepage3.nifty.com/supika_star/schwall.gif" ;          # カレンダー外、背景画像
+$bgimage =    "http://supika.c.ooco.jp/sch/schwall.gif" ;          # カレンダー外、背景画像
 
 $cursor_bg =  "#ccffcc" ;   # カーソルがあるセルの背景色
 
