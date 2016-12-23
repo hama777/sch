@@ -30,7 +30,7 @@ local($xx) ;
 printf("Content-type: text/html\n\n" ) ; 
 printf("<html><body>\n") ; 
 printf("<b>データ一覧</b><br>\n");
-printf("<form method=\"POST\" action=\"./sch_list.pl\">\n") ; 
+printf("<form method=\"POST\" action=\"./sch_list.cgi\">\n") ; 
 printf("<table border=0 bgcolor=#4f23f7 cellspacing=0 cellpadding=0><tr><td>\n<table cellspacing=1 border=0 cellpadding=0>") ; 
 printf("<tr bgcolor=#bca3ff><td>削除</td><td>日付</td><td>属性</td><td>データ</td></tr>\n");
 
@@ -51,7 +51,7 @@ while ($xx = <IN>) {
 }
 close(IN); 
 printf("</td></tr></table></table><br><input type=\"submit\" name=\"del\" value=\"削除\"></form><br>\n") ; 
-printf("<a href=./sch_setup.pl>戻る</a></body></html>\n") ;
+printf("<a href=./sch_setup.cgi>戻る</a></body></html>\n") ;
 
 
 }
