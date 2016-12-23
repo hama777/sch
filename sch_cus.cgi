@@ -74,7 +74,7 @@ $daynumber_size = 10 ;      # 日付文字のサイズ
 $fmt_ho="<td bgcolor=%s align=%s valign=%s class=sc onClick=\"add(%d,%d)\"><font color=red>%d</font></td>\n" ; 
 $fmt_nm="<td bgcolor=%s align=%s valign=%s class=sc onClick=\"add(%d,%d)\">%s</td>\n" ; 
 
-$fmt_menu="<a href=\"sch.pl?ctype=%d&yy=%d&mm=%d\">%s</a> \n" ; 
+$fmt_menu="<a href=\"sch.cgi?ctype=%d&yy=%d&mm=%d\">%s</a> \n" ; 
 
 
 $mode = 0 ; 
@@ -123,14 +123,14 @@ if ( $cfg_ok ne ""  )  {   #  カスタマイズ処理
     &edit_cfg ; 
     &w_close ;
 #    &message;
-#    system("./sch.pl?ctype=0") ; 
+#    system("./sch.cgi?ctype=0") ; 
     exit ; 
 }
 
 if ( $cfg_ng ne ""  )  {   #  カスタマイズ処理
     &w_jump ;
 #    &message;
-#    system("./sch.pl?ctype=0") ; 
+#    system("./sch.cgi?ctype=0") ; 
     exit ; 
 }
 
@@ -169,7 +169,7 @@ Content-type: text/html;
 <meta http-equiv="Content-Style-Type" content="text/css">
 <title>設定完了</title>
 </head>
-<body  onload="javascript:window.open('./sch_setup.pl',_self)">
+<body  onload="javascript:window.open('./sch_setup.cgi',_self)">
 </body>
 </html>
 EOF
@@ -271,7 +271,7 @@ border-bottom-color : yellow;
 <tbody>
 <tr>
 <td>
-<form method="POST" action="sch_cus.pl">
+<form method="POST" action="sch_cus.cgi">
 <table border="0"><tr><td>
 線の色:</td><td>
 <input size="10" type="text" name="line_color" value="$line_color"></td></tr>
@@ -320,7 +320,7 @@ border-bottom-color : yellow;
 <br>
 <input type="submit" name="cfg_ok" value="登録"> &nbsp; &nbsp; 
 <input type="hidden" name="ctype" value="$ctype"> 
-<a href=./sch_setup.pl>戻る<a/>
+<a href=./sch_setup.cgi>戻る<a/>
 </form>
 </td>
 </tr>
