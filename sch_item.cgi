@@ -37,7 +37,7 @@ local($xx) ;
 printf("Content-type: text/html\n\n" ) ; 
 printf("<html><body>\n") ; 
 printf("<b>定型項目編集</b><br>\n");
-printf("<form method=\"POST\" action=\"./sch_item.pl\">\n") ; 
+printf("<form method=\"POST\" action=\"./sch_item.cgi\">\n") ; 
 printf("<table>") ; 
 
 
@@ -56,7 +56,7 @@ while ($xx = <IN>) {
 close(IN); 
 printf("</table><br><input type=\"submit\" name=\"del\" value=\"削除\"><br><br><input size=20 type=text name=\"additem\" style=\"background-color : #ffffbb;\">
 <input type=\"submit\" name=\"add\" value=\"追加\"><br>\n") ; 
-printf("</form><a href=./sch_setup.pl>戻る<a/></body></html>\n") ;
+printf("</form><a href=./sch_setup.cgi>戻る<a/></body></html>\n") ;
 
 
 }
